@@ -1,11 +1,11 @@
-# AlignNoise: Training-Free Noise Optimization for High-Quality Image Outpainting
+# Bridging the Gap: Consistent Image Outpainting via Training-Free Noise Optimization
 
 [![Conference](https://img.shields.io/badge/ACM%20MM-2025-blue)](https://2025.acmmm.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **[Paper]** (Link will be provided later) | **[Code]** (Coming in August 2025)
 
-This repository contains the official implementation for the paper "AlignNoise: Training-Free Noise Optimization for Image Outpainting", accepted by **ACM Multimedia 2025**.
+This repository contains the official implementation for the paper "Bridging the Gap: Consistent Image Outpainting via Training-Free Noise Optimization", accepted by **ACM Multimedia 2025**.
 
 `AlignNoise` is a novel, training-free, two-stage noise optimization algorithm for image outpainting. It enhances pre-trained diffusion models to generate high-quality, semantically consistent content beyond the original image boundaries, effectively resolving common issues like semantic misalignment and the generation of irregular high-frequency patterns without any fine-tuning.
 
