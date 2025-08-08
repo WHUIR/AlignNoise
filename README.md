@@ -7,9 +7,13 @@
 
 This repository contains the official implementation for the paper "Bridging the Gap: Consistent Image Outpainting via Training-Free Noise Optimization", accepted by **ACM Multimedia 2025**.
 
+Abstract:
+Image outpainting has drawn increasing demands from many real-world applications. The core capacity called for this task is to generate image content beyond the boundaries that are semantically aligned with the source image. Compared to other image generation tasks, image outpainting remains very challenging since we need to identify the scene of the source image and generate new yet consistent boundaries with few local context. However, one common propensity for the outpainting techniques is to generate irregular high-frequency patterns. Furthermore, the dominating data-driven learning paradigm utilized by the existing state-of-the-art methods would require sophisticated model design, significant computation cost and introduce potential bias as well.
+
+To address these challenges, we propose a training-free two-stage noise optimization algorithm for image outpainting (named AlignNoise). Specifically, to avoid expensive post fine-tuning, we utilize the pre-trained diffusion model as generator for image outpainting. Then, we analyze the attention patterns within the outpainted region. It is observed that when these attention scores disproportionately focus more on the outpainted region while neglecting the source area during the initial sampling steps, the inconsistent alignment between the outpainted and source regions is likely to arise. Hence, we devise a noise optimization strategy in AlignNoise to adjust attention between the two regions such that the scene of source image can be well captured, leading to better semantic alignment. Moreover, we propose to refine the initial noise by leveraging the frequency features of the denoised outpainted region, effectively reducing abnormal pattern generation without significantly altering the image’s composition or distribution. In essence, the resultant AlignNoise works as a plug-and-play for the underlying or any generator. Extensive experiments demonstrate the superiority of AlignNoise in resolving semantic alignment without any fine-tuning for image outpainting. Specifically, AlignNoise achieves average improvements of up to 7.64 and 5.78 in terms of FID and IS metric respectively.
 
 
-## Status!
+## Status
 * ✅ [2025.7.12] Our paper is accepted by **ACM Multimedia 2025**!
 * ✅ [2024.8.07] The source code has been released.
 
