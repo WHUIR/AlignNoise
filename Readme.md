@@ -24,5 +24,9 @@ This repository contains the official implementation for the paper "Bridging the
 ## 🗓️ Status
 
 * ✅ Paper accepted by **ACM Multimedia 2025**.
-* ⏳ Code will be cleaned up and made publicly available by **August 2025**.
+* ✅ Code is made publicly available by **August 2025**.
 
+
+## Acknowledgments
+---
+The code is built upon [diffusers](https://github.com/huggingface/diffusers), [initno](https://github.com/xiefan-guo/initno/blob/main/run_sd_initno.py) and [FreeInit](https://github.com/TianxingWu/FreeInit) we thank all the contributors for open-sourcing.
