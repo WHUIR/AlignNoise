@@ -46,8 +46,7 @@ class ImageProcessor:
     def _setup_pipeline(self):
         self._set_seed()
         self.pipeline = StableDiffusionInpaintPipeline.from_pretrained(
-            # "stabilityai/stable-diffusion-2-inpainting",
-            "/share/project/huggingface/models/stable-diffusion-2-inpainting",
+            "stabilityai/stable-diffusion-2-inpainting",
             torch_dtype=torch.float16,
             safety_checker=None
         )
