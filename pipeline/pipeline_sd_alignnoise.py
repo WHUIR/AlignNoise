@@ -1116,7 +1116,6 @@ class StableDiffusionInpaintPipeline(
   
             self.unet.zero_grad()
             optimizer.zero_grad()
-
             AAM_loss.backward()
             optimizer.step()
 
